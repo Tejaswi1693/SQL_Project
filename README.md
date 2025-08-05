@@ -6,7 +6,7 @@
 1. AtliQ Hardware Is A Global Computer Hardware Manufacturer That Specializes In Producing High-Performance Computer Components And Peripherals.
 2. The Company Operates Across Major International Markets, Including Apac (Asia- Pacific), Eu (Europe), Na (North America), And Latam (Latin America).
 3. Atliq’s Product Portfolio Includes Processors, Motherboards, Graphics Cards, Ram, Storage Solutions (Ssds, Hdds),And Peripherals Such As Keyboards, Mice, And Monitors.
-4. With A Commitment To Innovation And Quality, The Company Caters To Both Individual Consumers And Businesses, Ensuring Reliable And Efficient Hardware Solutions For Diverse      Computing Needs.
+4. With A Commitment To Innovation And Quality, The Company Caters To Both Individual Consumers And Businesses, Ensuring Reliable And Efficient Hardware Solutions For          Diverse Computing Needs.
 
 **PROBLEM STATEMENT**
 
@@ -97,6 +97,7 @@ FUNCTIONS
 GENERATE MONTHLY GROSS SALES REPORT FOR CROMA INDIA FOR ALL THE YEARS
 
 SELECT S.DATE, SUM(ROUND(S.SOLD_QUANTITY*G.GROSS_PRICE,2)) AS MONTHLY_SALES FROM FACT_SALES_MONTHLY S JOIN FACT_GROSS_PRICE G ON G.FISCAL_YEAR=GET_FISCAL_YEAR(S.DATE) AND G.PRODUCT_CODE=S.PRODUCT_CODE WHERE CUSTOMER_CODE=90002002 GROUP BY DATE;
+
 <img width="172" height="192" alt="sql_9" src="https://github.com/user-attachments/assets/083b767f-97b3-466b-9061-3d8962b280e4" />
 
 **MODULE:** STORED PROCEDURES: MONTHLY GROSS SALES REPORT GENERATE MONTHLY 
